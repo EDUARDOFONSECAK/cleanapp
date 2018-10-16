@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Accumulated:</strong>
+  <%= @machine.accumulated %>
+</p>
+
+<p>
+  <strong>Inserted:</strong>
+  <%= @machine.inserted %>
+</p>
+
+<p>
+  <strong>Id user:</strong>
+  <%= @machine.id_user %>
+</p>
+
+<p>
+  <strong>Month:</strong>
+  <%= @machine.month %>
+</p>
+
+<p>
+  <strong>Historical:</strong>
+  <%= @machine.historical %>
+</p>
+
+<%= link_to 'Edit', edit_machine_path(@machine) %> |
+<%= link_to 'Back', machines_path %>

@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  accumulated: 1.5
+  inserted: 1
+  id_user: MyString
+  month: 2018-10-16
+  historical: one
+
+two:
+  accumulated: 1.5
+  inserted: 1
+  id_user: MyString
+  month: 2018-10-16
+  historical: two

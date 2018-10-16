@@ -1,0 +1,47 @@
+<%= form_with(model: historical, local: true) do |form| %>
+  <% if historical.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(historical.errors.count, "error") %> prohibited this historical from being saved:</h2>
+
+      <ul>
+      <% historical.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :id_user %>
+    <%= form.text_field :id_user, id: :historical_id_user %>
+  </div>
+
+  <div class="field">
+    <%= form.label :collection %>
+    <%= form.text_field :collection, id: :historical_collection %>
+  </div>
+
+  <div class="field">
+    <%= form.label :month %>
+    <%= form.date_select :month, id: :historical_month %>
+  </div>
+
+  <div class="field">
+    <%= form.label :administration_value %>
+    <%= form.text_field :administration_value, id: :historical_administration_value %>
+  </div>
+
+  <div class="field">
+    <%= form.label :discount %>
+    <%= form.text_field :discount, id: :historical_discount %>
+  </div>
+
+  <div class="field">
+    <%= form.label :user_id %>
+    <%= form.text_field :user_id, id: :historical_user_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

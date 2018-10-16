@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  lastname: MyString
+  admission: 2018-10-16
+  departure: 2018-10-16
+  residential: one
+
+two:
+  name: MyString
+  lastname: MyString
+  admission: 2018-10-16
+  departure: 2018-10-16
+  residential: two

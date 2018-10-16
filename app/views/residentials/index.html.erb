@@ -1,0 +1,33 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Residentials</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Address</th>
+      <th>Name bank</th>
+      <th>Bank account</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @residentials.each do |residential| %>
+      <tr>
+        <td><%= residential.name %></td>
+        <td><%= residential.address %></td>
+        <td><%= residential.name_bank %></td>
+        <td><%= residential.bank_account %></td>
+        <td><%= link_to 'Show', residential %></td>
+        <td><%= link_to 'Edit', edit_residential_path(residential) %></td>
+        <td><%= link_to 'Destroy', residential, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Residential', new_residential_path %>

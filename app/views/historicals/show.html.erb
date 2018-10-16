@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Id user:</strong>
+  <%= @historical.id_user %>
+</p>
+
+<p>
+  <strong>Collection:</strong>
+  <%= @historical.collection %>
+</p>
+
+<p>
+  <strong>Month:</strong>
+  <%= @historical.month %>
+</p>
+
+<p>
+  <strong>Administration value:</strong>
+  <%= @historical.administration_value %>
+</p>
+
+<p>
+  <strong>Discount:</strong>
+  <%= @historical.discount %>
+</p>
+
+<p>
+  <strong>User:</strong>
+  <%= @historical.user %>
+</p>
+
+<%= link_to 'Edit', edit_historical_path(@historical) %> |
+<%= link_to 'Back', historicals_path %>

@@ -1,0 +1,42 @@
+<%= form_with(model: machine, local: true) do |form| %>
+  <% if machine.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(machine.errors.count, "error") %> prohibited this machine from being saved:</h2>
+
+      <ul>
+      <% machine.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :accumulated %>
+    <%= form.text_field :accumulated, id: :machine_accumulated %>
+  </div>
+
+  <div class="field">
+    <%= form.label :inserted %>
+    <%= form.number_field :inserted, id: :machine_inserted %>
+  </div>
+
+  <div class="field">
+    <%= form.label :id_user %>
+    <%= form.text_field :id_user, id: :machine_id_user %>
+  </div>
+
+  <div class="field">
+    <%= form.label :month %>
+    <%= form.date_select :month, id: :machine_month %>
+  </div>
+
+  <div class="field">
+    <%= form.label :historical_id %>
+    <%= form.text_field :historical_id, id: :machine_historical_id %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>
